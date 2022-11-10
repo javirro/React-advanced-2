@@ -1,6 +1,3 @@
 import useFetch from 'fetch-suspense'
 
-export const useFetchSuspense = (url) => {
-    const response = useFetch(url)
-    return response
-}
+export const useFetchPokemon = (name) => useFetch('https://pokeapi.co/api/v2/pokemon/'+ name)
